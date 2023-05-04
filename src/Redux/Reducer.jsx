@@ -4,7 +4,7 @@ const initialdata = {
  
  const Reducer = (storedata=initialdata,action) => {
    if (action.type === "alluserdata") {
-     return {...storedata,
+     return {
         alluserdata:action.payload
      }
  }
